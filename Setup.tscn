@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = " Setup.gd
+extends Node2D
+
+export var scene_to_load: PackedScene = preload(\"./Main.tscn\")
+
+func _ready() -> void:
+	var custom_autoload = CustomAutoload.new()
+	custom_autoload.name = \"CustomAutoload\"
+	yield(get_tree(), \"idle_frame\")
+	get_tree().root.add_child(custom_autoload)
+	get_tree().change_scene_to(scene_to_load)
+"
+
+[node name="Setup" type="Node2D"]
+script = SubResource( 1 )
+scene_to_load = null
