@@ -10,4 +10,4 @@ jobs:
     name: build and push to gh-pages
     uses: Xananax/godot-ci-test/.github/workflows/BuildGodot.yaml@fd96460e1a7382a4805e1c16aaa9aea4151074ba
     with:
-      sub_build_path: staging
+      sub_build_path: /staging
