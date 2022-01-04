@@ -8,7 +8,7 @@ on:
 jobs:
   build-release:
     name: build and push to gh-pages
-    uses: ./.github/workflows/BuildGodot@v1
+    uses: ./.github/workflows/BuildGodot.yaml@19bc1d521257a88797027575283aa23c241cb9b0
     with:
       sub_build_path: ''
     secrets:
