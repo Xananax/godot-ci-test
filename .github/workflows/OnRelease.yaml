@@ -11,5 +11,3 @@ jobs:
     uses: Xananax/godot-ci-test/.github/workflows/BuildGodot.yaml@19bc1d521257a88797027575283aa23c241cb9b0
     with:
       sub_build_path: ''
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
