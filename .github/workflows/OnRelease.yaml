@@ -8,6 +8,6 @@ on:
 jobs:
   build-release:
     name: build and push to gh-pages
-    uses: Xananax/godot-ci-test/.github/workflows/BuildGodot.yaml@19bc1d521257a88797027575283aa23c241cb9b0
+    uses: Xananax/godot-ci-test/.github/workflows/BuildGodot.yaml@fd96460e1a7382a4805e1c16aaa9aea4151074ba
     with:
       sub_build_path: ''
